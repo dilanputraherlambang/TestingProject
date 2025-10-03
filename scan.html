@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Wajah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Verifikasi Wajah</h1>
+            <p>Posisikan wajah Anda di depan kamera.</p>
+            <div class="webcam-container">
+                <video id="webcam" autoplay playsinline></video>
+            </div>
+            <button id="scanButton">Scan Wajah Saya</button>
+            <div id="scanStatus" class="status-message"></div>
+             <a href="index.html" class="back-button" style="margin-top: 15px;">Kembali</a>
+        </div>
+    </div>
+    <script src="scan.js"></script>
+</body>
+</html>
