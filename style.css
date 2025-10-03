@@ -1,0 +1,169 @@
+/* Pengaturan Dasar */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Tampilan Form dan Kartu Status */
+.form-container, .status-card {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #606770;
+}
+
+/* Grup Input Form */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* Tombol */
+button, .scan-button, .back-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+button {
+    background-color: #1877f2;
+    color: white;
+}
+
+button:hover {
+    background-color: #166fe5;
+}
+
+button:disabled {
+    background-color: #a0bdf5;
+    cursor: not-allowed;
+}
+
+.scan-button {
+    background-color: #42b72a;
+    color: white;
+    margin-top: 10px;
+}
+
+.scan-button:hover {
+    background-color: #36a420;
+}
+
+.back-button {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Pemisah */
+.separator {
+    margin: 20px 0;
+    color: #8a8d91;
+    font-weight: 600;
+}
+
+/* Pesan Status */
+.status-card.success h2 {
+    color: #28a745;
+}
+
+.status-card.error h2 {
+    color: #dc3545;
+}
+
+.data-diri {
+    text-align: left;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.data-diri h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.data-diri p {
+    margin-bottom: 8px;
+}
+
+/* Halaman Scan Wajah */
+.webcam-container {
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#webcam {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1); /* Efek cermin */
+}
+
+#scanStatus {
+    margin-top: 15px;
+    font-weight: bold;
+}
