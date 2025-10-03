@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Absensi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Sistem Absensi Siswa</h1>
+            <p>Silakan masukkan Username/ID Anda untuk mencatat kehadiran.</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username / ID</label>
+                    <input type="text" id="username" name="username" placeholder="Contoh: SISWA01" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="separator">atau</div>
+            <a href="scan.html" class="scan-button">Gunakan Scan Wajah</a>
+            <div id="errorMessage" class="error-message" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
