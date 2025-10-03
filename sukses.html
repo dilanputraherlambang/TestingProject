@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Berhasil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="status-card success">
+            <h2>✅ Verifikasi Berhasil!</h2>
+            <p>Kehadiran Anda telah berhasil dicatat.</p>
+            <div class="data-diri">
+                <h3>Detail Data Diri:</h3>
+                <p><strong>Nama:</strong> <span id="namaSiswa">-</span></p>
+                <p><strong>ID:</strong> <span id="idSiswa">-</span></p>
+                <p><strong>Waktu Masuk:</strong> <span id="waktuMasuk">-</span></p>
+            </div>
+            <a href="index.html" class="back-button">Kembali ke Halaman Login</a>
+        </div>
+    </div>
+
+    <script>
+        // Mengambil data dari localStorage saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            const dataVerifikasi = JSON.parse(localStorage.getItem('verifikasiData'));
+            if (dataVerifikasi) {
+                document.getElementById('namaSiswa').textContent = dataVerifikasi.nama;
+                document.getElementById('idSiswa').textContent = dataVerifikasi.id;
+                document.getElementById('waktuMasuk').textContent = dataVerifikasi.waktu;
+                
+                // Hapus data setelah ditampilkan untuk keamanan
+                localStorage.removeItem('verifikasiData');
+            } else {
+                // Jika tidak ada data, kembali ke login
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
