@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Simulasi database siswa
     const databaseSiswa = {
-        "SISWA01": { nama: "Budi Gunawan" },
-        "SISWA02": { nama: "Citra Lestari" },
-        "GURU01": { nama: "Andi Wijaya" }
+        "SISWA01": { nama: "Mohamad Dilan" },
+        "SISWA02": { nama: "Alfitra Dwanda" },
+        "GURU01": { nama: "Samen Sasono" }
     };
 
     const loginForm = document.getElementById('loginForm');
