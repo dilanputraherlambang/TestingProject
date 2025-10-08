@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Data dummy hasil scan
             const dataVerifikasi = {
-                id: 'SCAN-WAJAH-001',
-                nama: 'Pengguna Terverifikasi',
+                id: 'Scanner Wajah',
+                nama: 'Mohamad Dilan',
                 waktu: waktuSekarang
             };
 
